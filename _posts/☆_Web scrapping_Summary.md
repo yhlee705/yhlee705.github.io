@@ -1,3 +1,8 @@
+---
+layout: single
+title: "Web Scrapping, Web Crawling"
+---
+
 # Web Scrapping, Web Crawling
 
 * <b>웹스크래핑</b>
