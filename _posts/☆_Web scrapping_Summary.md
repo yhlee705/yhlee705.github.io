@@ -1,4 +1,4 @@
-### Web Scrapping, Web Crawling
+# Web Scrapping, Web Crawling
 
 * <b>웹스크래핑</b>
 
@@ -49,7 +49,7 @@
 
 <br>
 
-#### 동적 페이지 웹스크래핑
+## 동적 페이지 웹스크래핑
 
 Selenium과 BeautifulSoup을 함께 사용하여 동적 웹 페이지를 스크래핑할 수 있음. <br>
 Selenium은 웹 브라우저를 자동화할 수 있으며, BeautifulSoup은 웹 페이지의 HTML 코드를 파싱하여 원하는 데이터를 추출.
