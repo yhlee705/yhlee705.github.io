@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "KO-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "My Study"
 title_separator          : "-"
