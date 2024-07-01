@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "First Posting"
+title: "Color Tutorial(Web Site)"
 ---
 
 # Color Tutorial(Web Site)
