@@ -1,5 +1,6 @@
-###This code will not work in repl.it as there is no access to the colorgram package here.###
-##We talk about this in the video tutorials##
+'image.jpg' 파일로부터 30개의 color를 추출하는 Library
+
+```python
 import colorgram
 
 rgb_colors = []
@@ -9,3 +10,14 @@ for color in colors:
 
 print(rgb_colors)
 print(len(rgb_colors))
+```
+
+<em>colorgram.Color</em>의 properties는 아래와 같음
+
+```python
+colorgram.Color
+
+Color.rgb        # r, g, b = 0 ~ 255
+Color.hsl        # h, s, l = 0 ~ 255
+Color.proportion # 0 ~ 1.0
+```
