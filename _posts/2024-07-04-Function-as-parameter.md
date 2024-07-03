@@ -3,9 +3,7 @@ layout: single
 title: "함수를 다른 함수의 인자로 받기"
 ---
 
-# 함수를 다른 함수의 인자로 받기
-
-만들어진 함수를 다른 함수에서 인자로 받는 방법
+기존의 함수를 다른 함수에서 인자로 받는 방법
 
 ```python
 from turtle import Turtle, Screen
