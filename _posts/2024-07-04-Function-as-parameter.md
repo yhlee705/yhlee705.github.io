@@ -1,5 +1,6 @@
 ---
-categories: Python
+categories: 
+ - Python
 layout: single
 title: "함수를 다른 함수의 인자로 받기"
 ---
