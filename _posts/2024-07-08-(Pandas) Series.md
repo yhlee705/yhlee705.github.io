@@ -7,7 +7,13 @@ Pandas uses a data structure known as DataFrame (think of it as Microsoft excel 
 DataFrames empower programmers to store and manipulate data in a tabular fashion (rows and columns).
 
 Series Vs. DataFrame? Series is considered a single column of a DataFrame.
+Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구입니다.
 
+Pandas는 DataFrame이라는 데이터 구조를 사용합니다 (Python에서의 Microsoft Excel로 생각해 보세요).
+
+DataFrame은 프로그래머가 데이터를 행과 열로 구성된 표 형태로 저장하고 조작할 수 있게 합니다.
+
+Series와 DataFrame의 차이점? Series는 DataFrame의 단일 열로 간주됩니다.
 
 ```python
 import pandas as pd
