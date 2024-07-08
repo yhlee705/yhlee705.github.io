@@ -1,3 +1,8 @@
+---
+layout: single
+title: "(Pandas) 1. Series"
+---
+
 ## 1. PANDAS SERIES
 
 - Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
