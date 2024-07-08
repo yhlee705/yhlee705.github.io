@@ -17,23 +17,17 @@ import pandas as pd
 
 
 ```python
-# Let's define a Python list that contains 5 stocks: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
+# 다음은 5개의 주식을 포함하는 파이썬 리스트를 정의: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
 my_list = ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 ```
 
 
 ```python
-# Let's confirm the Datatype
+# 데이터 타입
 type(my_list)
 ```
 
-
-
-
     list
-
-
-
 
 ```python
 # Let's create a one dimensional Pandas "series" 
@@ -45,18 +39,12 @@ series_1 = pd.Series(data = my_list)
 series_1
 ```
 
-
-
-
     0    NVDA
     1    MSFT
     2      FB
     3    AMZN
     4      BA
     dtype: object
-
-
-
 
 ```python
 # Let's confirm the Pandas Series Datatype
