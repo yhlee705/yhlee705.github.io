@@ -23,7 +23,7 @@ with open("my_file.txt") as file:
 ```
 
 3. 읽기/쓰기 모드
- - mode 파라미터 : r(읽기), w(쓰기), a(추가)
+mode 파라미터 : r(읽기), w(쓰기), a(추가)
 ```python
 with open("my_file.txt", mode = "r") as file:
   contents = file.read()
