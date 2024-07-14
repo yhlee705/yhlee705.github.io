@@ -1,4 +1,6 @@
 ---
+categories: 
+ - Pandas
 layout: single
 title: "(Pandas) 1. Series"
 ---
