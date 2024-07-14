@@ -30,6 +30,7 @@ with open("my_file.txt", mode = "r") as file:
   print(contents)
 ```
 <br>
+
 ## 파일 쓰기
 ```python
 with open("my_file.txt", mode = "w") as file:
