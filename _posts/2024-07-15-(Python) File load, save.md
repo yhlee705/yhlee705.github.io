@@ -31,7 +31,7 @@ with open("my_file.txt", mode = "r") as file:
 ```
 <br>
 
-## 파일 쓰기<br>
+## 파일 쓰기
 ```python
 with open("my_file.txt", mode = "w") as file:
   file.write("New text.")
