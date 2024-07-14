@@ -5,7 +5,7 @@ layout: single
 title: "(Python) Web Scraping, Web Crawling"
 ---
 
-# Web Scraping, Web Crawling
+## Web Scraping, Web Crawling
 
 * <b>웹스크래핑</b>
  1. 목적: 특정 웹사이트나 페이지에서 원하는 데이터를 추출하는 것이 주목적입니다.

@@ -5,7 +5,7 @@ layout: single
 title: "(Python) 이미지 파일로부터 Color를 추출하는 Library"
 ---
 
-'image.jpg' 파일로부터 30개의 Color를 추출하는 Library
+## 'image.jpg' 파일로부터 30개의 Color를 추출하는 Library
 
 ```python
 import colorgram
