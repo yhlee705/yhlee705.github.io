@@ -5,7 +5,7 @@ layout: single
 title: "(Python) 파일 읽기, 쓰기"
 ---
 
-### 파일 읽기
+## 파일 읽기
 
 1. open/close 사용하기 
 ```python
@@ -28,4 +28,10 @@ mode 파라미터 : r(읽기), w(쓰기), a(추가)
 with open("my_file.txt", mode = "r") as file:
   contents = file.read()
   print(contents)
+```
+
+## 파일 쓰기
+```python
+with open("my_file.txt", mode = "w") as file:
+  file.write("New text.")
 ```
