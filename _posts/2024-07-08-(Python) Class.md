@@ -1,4 +1,6 @@
 ---
+categories: 
+ - Python
 layout: single
 title: "(Python) Class"
 ---
