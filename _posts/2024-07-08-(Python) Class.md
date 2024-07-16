@@ -5,7 +5,7 @@ layout: single
 title: "(Python) Class"
 ---
 
-#### 상속((Inheritance)
+## 상속((Inheritance)
 ```python
 class Animal:
     def __init__(self):
