@@ -7,10 +7,10 @@ title: "(Pandas) 1. Series"
 
 ## 1. PANDAS SERIES
 
-- Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
-- Pandas는 DataFrame이라는 데이터 구조를 사용
-- DataFrame은 프로그래머가 데이터를 행과 열로 구성된 표 형태로 저장하고 조작할 수 있게 함
-- Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
+* Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
+* Pandas는 DataFrame이라는 데이터 구조를 사용
+* DataFrame은 프로그래머가 데이터를 행과 열로 구성된 표 형태로 저장하고 조작할 수 있게 함
+* Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
 
 
 ```python
@@ -30,14 +30,13 @@ type(my_list)
 ```
 
     list
+<br>
+
+* List로부터 1차원의 Series 생성
+  - Series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
+  - 참고 사이트 : https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
 
 ```python
-# 1차원 Pandas "series" 생성
-# Pandas 생성자 메서드를 사용하여 Python 목록에서 시리즈를 생성
-# series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
-# 자세한 내용은 Pandas 문서를 확인하십시오: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
-# Object datatype은 텍스트 데이터(문자열)에 사용됨
-
 series_1 = pd.Series(data = my_list)
 series_1
 ```
