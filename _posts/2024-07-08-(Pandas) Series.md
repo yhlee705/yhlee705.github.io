@@ -32,11 +32,12 @@ type(my_list)
     list
 
 ```python
-# Let's create a one dimensional Pandas "series" 
-# Let's use Pandas Constructor Method to create a series from a Python list
-# Note that series is formed of data and associated index (numeric index has been automatically generated) 
-# Check Pandas Documentation for More information: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
-# Object datatype is used for text data (String)
+# 1차원 Pandas "series" 생성
+# Pandas 생성자 메서드를 사용하여 Python 목록에서 시리즈를 생성
+# series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
+# 자세한 내용은 Pandas 문서를 확인하십시오: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
+# Object datatype은 텍스트 데이터(문자열)에 사용됨
+
 series_1 = pd.Series(data = my_list)
 series_1
 ```
