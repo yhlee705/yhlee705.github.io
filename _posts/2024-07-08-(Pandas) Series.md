@@ -7,36 +7,18 @@ title: "(Pandas) 1. Series"
 
 ## 1. PANDAS SERIES
 
-* Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
-* Pandas는 DataFrame이라는 데이터 구조를 사용
-* DataFrame은 프로그래머가 데이터를 행과 열로 구성된 표 형태로 저장하고 조작할 수 있게 함
-* Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
-
-
-```python
-import pandas as pd
-```
-
-
-```python
-# 다음은 5개의 주식을 포함하는 파이썬 리스트를 정의: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
-my_list = ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
-```
-
-
-```python
-# 데이터 타입
-type(my_list)
-```
-
-    list
+  - Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
+  - Pandas는 DataFrame이라는 데이터 구조를 사용
+  - DataFrame은 프로그래머가 데이터를 행과 열로 구성된 표 형태로 저장하고 조작할 수 있게 함
+  - Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
 <br>
 
-* List로부터 1차원의 Series 생성
+### * List로부터 1차원의 Series 생성
   - Series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
   - 참고 사이트 : https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
 
 ```python
+my_list = ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 series_1 = pd.Series(data = my_list)
 series_1
 ```
@@ -47,68 +29,6 @@ series_1
     3    AMZN
     4      BA
     dtype: object
-
-```python
-# Let's confirm the Pandas Series Datatype
-type(series_1)
-```
-
-
-
-
-    pandas.core.series.Series
-
-
-
-
-```python
-# Let's define another Pandas Series that contains numeric values (stock prices) instead of text data
-# Note that we have int64 datatype which means it's integer stored in 64 bits in memory
-series_2 = pd.Series(data = [100, 200, 500, 1000, 5000])
-series_2
-```
-
-
-
-
-    0     100
-    1     200
-    2     500
-    3    1000
-    4    5000
-    dtype: int64
-
-
-
-**MINI CHALLENGE #1:**
-- **Define a Pandas Series named "my_series" that contains your top 3 favourite movies. Confirm the datatype of "my_series"**
-
-
-```python
-my_series = pd.Series(data = ['Terminator', 'Coco', 'Dragon'])
-my_series
-```
-
-
-
-
-    0    Terminator
-    1          Coco
-    2        Dragon
-    dtype: object
-
-
-
-
-```python
-type(my_series)
-```
-
-
-
-
-    pandas.core.series.Series
-
 
 
 # 2. DEFINE A PANDAS SERIES WITH CUSTOM INDEX
