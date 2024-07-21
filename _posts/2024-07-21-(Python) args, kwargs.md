@@ -8,7 +8,7 @@ title: "(Python) *args, **kwargs"
 ## <b>*args</b>
 
 * Unlimited Positional Arguments라고 함
-* 여러개의 인수를 받을 수 있음
+* 여러개의 인수를 받을 수 있음, Tuple로 전달함
 
 ```python
 def add(*args):
