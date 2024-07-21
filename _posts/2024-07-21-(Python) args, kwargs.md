@@ -7,9 +7,9 @@ title: "(Python) *args, **kwargs"
 
 ## <b>*args</b>
 
-여러개의 인수를 받을 수 있음
+* Unlimited Positional Arguments라고 함
+* 여러개의 인수를 받을 수 있음
 
-기본 양식
 ```python
 def add(*args):
     sum = 0
