@@ -32,12 +32,52 @@ finally:
     raise TypeError("This is an error that I made up.")
 ```
 
-### IndexError 처리
+### IndexError 처리 
+
+```python
+# Catch the exception and make sure the code runs without crashing.
+fruits = ["Apple", "Pear", "Orange"]
+def make_pie(index):
+  try:
+    fruit = fruits[index]
+  except IndexError:
+    print("Fruit pie")
+  else:
+    print(fruit + " pie")
+
+make_pie(4) # Raises IndexError on list with less than 5 items.
+```
+
+Result
+```
+Fruit pie
+```
 
 
+### KeyError 처리 예제
 
+```python
+facebook_posts = [{'Likes': 21, 'Comments': 2}, 
+                  {'Likes': 13, 'Comments': 2, 'Shares': 1}, 
+                  {'Likes': 33, 'Comments': 8, 'Shares': 3}, 
+                  {'Comments': 4, 'Shares': 2},
+                  {'Comments': 1, 'Shares': 1}, 
+                  {'Likes': 19, 'Comments': 3}]
 
-### KeyError 처리
+total_likes = 0
 
+# Catching the KeyError exception in the dictionary
 
+for post in facebook_posts:
+  try:
+    total_likes = total_likes + post['Likes']
+  except KeyError:
+    pass 
 
+print(total_likes)
+```
+
+Result
+```
+86
+```
