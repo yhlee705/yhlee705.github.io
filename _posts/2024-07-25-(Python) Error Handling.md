@@ -31,3 +31,13 @@ else:
 finally:
     raise TypeError("This is an error that I made up.")
 ```
+
+### IndexError 처리
+
+
+
+
+### KeyError 처리
+
+
+
