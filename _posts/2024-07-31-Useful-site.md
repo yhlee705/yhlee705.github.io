@@ -1,9 +1,11 @@
 ---
 layout: single
-title: "Color Tutorial(Web Site)"
+title: "유용한 Website"
 ---
 
-## Color Tutorial(Web Site)
+## Color 관련
+
+### Color Tutorial(Web Site)
 
 https://www.w3schools.com/colors/default.asp
 
@@ -11,8 +13,17 @@ https://www.w3schools.com/colors/default.asp
 * Main 페이지로 들어가면 여러가지 언어에 대한 간단한 tutorial을 볼 수 있음
 <br>
 
-## Color Hunt
+### Color Hunt
 
 https://colorhunt.co/
 
 * Color 조합을 선택할 수 있음
+
+
+## Cloud
+
+### Pythonanywhere
+
+https://www.pythonanywhere.com/
+
+* 파이썬 파일을 무료로 호스팅
