@@ -37,3 +37,10 @@ https://www.pythonanywhere.com/
 http://open-notify.org/Open-Notify-API/ISS-Location-Now/
 
 * ISS의 현재 위치를 반환하는 간단한 API(입력을 받지는 않음)
+
+
+### HTTP Status Codes Glossary
+
+https://www.webfx.com/web-development/glossary/http-status-codes/
+
+* HTTP 상태 코드를 확인할 수 있는 사이트
