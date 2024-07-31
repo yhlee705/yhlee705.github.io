@@ -43,7 +43,7 @@ http://open-notify.org/Open-Notify-API/ISS-Location-Now/
 
 https://sunrise-sunset.org/api
 
-* 주어진 위도와 경도 에 대한 일몰 및 일출 시간을 제공하는 무료 API
+* 주어진 위도와 경도 에 대한 일몰 및 일출 시간을 제공하는 무료 REST API
 
 
 
