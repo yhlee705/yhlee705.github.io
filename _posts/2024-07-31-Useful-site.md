@@ -27,3 +27,13 @@ https://colorhunt.co/
 https://www.pythonanywhere.com/
 
 * 파이썬 파일을 무료로 호스팅
+
+
+
+## API
+
+### International Space Station Current Location
+
+http://open-notify.org/Open-Notify-API/ISS-Location-Now/
+
+* ISS의 현재 위치를 반환하는 간단한 API(입력을 받지는 않음)
