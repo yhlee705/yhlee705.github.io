@@ -39,7 +39,15 @@ http://open-notify.org/Open-Notify-API/ISS-Location-Now/
 * ISS의 현재 위치를 반환하는 간단한 API(입력을 받지는 않음)
 
 
-### HTTP Status Codes Glossary
+### Sunset and sunrise times API
+
+https://sunrise-sunset.org/api
+
+* 주어진 위도와 경도 에 대한 일몰 및 일출 시간을 제공하는 무료 API
+
+
+
+## HTTP Status Codes Glossary
 
 https://www.webfx.com/web-development/glossary/http-status-codes/
 
