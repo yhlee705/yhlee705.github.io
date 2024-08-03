@@ -54,17 +54,18 @@ https://opentdb.com/
 * 설정을 지정하면 API URL을 생성시켜줌
 <br>
 
-## HTTP Status Codes Glossary
-
-https://www.webfx.com/web-development/glossary/http-status-codes/
-
-* HTTP 상태 코드를 확인할 수 있는 사이트
-<br>
-
-
 ## HTML
 
 ### HTML Entitiees
 
 https://www.w3schools.com/html/html_entities.asp
 
+
+<br>
+
+### HTTP Status Codes Glossary
+
+https://www.webfx.com/web-development/glossary/http-status-codes/
+
+* HTTP 상태 코드를 확인할 수 있는 사이트
+<br>
