@@ -5,7 +5,7 @@ layout: single
 title: "(Pandas) 1. Series"
 ---
 
-## 1. PANDAS SERIES
+# 1. PANDAS SERIES 생성
 
   - Pandas는 Numpy를 기반으로 하는 데이터 조작 및 분석 도구
   - Pandas는 DataFrame이라는 데이터 구조를 사용
@@ -13,7 +13,8 @@ title: "(Pandas) 1. Series"
   - Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
 <br>
 
-### * List로부터 1차원의 Series 생성
+* List로부터 1차원의 Series 생성
+
   - Series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
   - 참고 사이트 : https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
 
@@ -31,53 +32,34 @@ series_1
     dtype: object
 
 
-# 2. DEFINE A PANDAS SERIES WITH CUSTOM INDEX
+# 2. Custom Index를 사용하여 Pandas Series 정의
 
+* 5개 주식명의 List 생성: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
 
 ```python
-# Let's define a Python list that contains 5 stocks: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
 my_list = ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 my_list
 ```
-
-
-
-
     ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 
+<br>
 
-
+* Series의 Index가 되는 List 생성
 
 ```python
-# Let's define a python list as shown below. This python list will be used for the Series index:
 my_labels = ['stock#1', 'stock#2', 'stock#3', 'stock#4', 'stock#5']
 my_labels
 ```
-
-
-
-
     ['stock#1', 'stock#2', 'stock#3', 'stock#4', 'stock#5']
 
+<br>
 
-
+* my_labels을 Index로, my_list를 데이터로 하는 1차원 Series 생성
 
 ```python
-# Let's create a one dimensional Pandas "series" 
-# Let's use Pandas Constructor Method to create a series from a Python list
-# Note that this series is formed of data and associated labels 
 series_3 = pd.Series(data = my_list, index = my_labels)
-```
-
-
-```python
-# Let's view the series
 series_3
 ```
-
-
-
-
     stock#1    NVDA
     stock#2    MSFT
     stock#3      FB
@@ -85,68 +67,27 @@ series_3
     stock#5      BA
     dtype: object
 
-
-
+* 생성된 Pandas Series의 타입은 아래와 같음
 
 ```python
-# Let's obtain the datatype
 type(series_3)
 ```
-
-
-
-
     pandas.core.series.Series
 
 
 
-**MINI CHALLENGE #2:**
-- **Define a Pandas Series named "my_series" that contains your top 3 favourite movies. Instead of using default numeric indexes (similar to mini challenge #1), use the following indexes "movie #1", "Movie #2", and "movie #3"**
+# 3. 딕셔너리(Dictionary)로부터 Pandas Series 생성
 
-
-```python
-movie_list = ['Terminator', 'Coco', 'Dragon']
-movie_label = ['Movie #1', 'Movie #2', 'Movie #3']
-my_series = pd.Series(data = movie_list, index = movie_label)
-```
-
+* 딕셔너리(Dictionary)의 Key 값을 Index로, Value 값을 Data로 하는 Pandas Series 생성
 
 ```python
-my_series
-```
 
-
-
-
-    Movie #1    Terminator
-    Movie #2          Coco
-    Movie #3        Dragon
-    dtype: object
-
-
-
-# 3. DEFINE A PANDAS SERIES FROM A DICTIONARY
-
-
-```python
-# A Dictionary consists of a collection of key-value pairs. Each key-value pair maps the key to its corresponding value.
-# Keys are unique within a dictionary while values may not be. 
-# List elements are accessed by their position in the list, via indexing while Dictionary elements are accessed via keys
-# Define a dictionary named "my_dict" using key-value pairs
 my_dict = {'Bank Client Name': 'Steve',
- 'Bank client ID': 111,
- 'Net worth [$]': 3500,
- 'Years with bank': 9}
-```
-
-
-```python
-# Show the dictionary
+           'Bank client ID': 111,
+           'Net worth [$]': 3500,
+           'Years with bank': 9}
 my_dict
 ```
-
-
-
 
     {'Bank Client Name': 'Steve',
      'Bank client ID': 111,
@@ -154,15 +95,9 @@ my_dict
      'Years with bank': 9}
 
 
-
-
 ```python
-# Confirm the dictionary datatype 
 type(my_dict)
 ```
-
-
-
 
     dict
 
