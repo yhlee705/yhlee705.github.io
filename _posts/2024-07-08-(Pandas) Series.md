@@ -13,7 +13,7 @@ title: "(Pandas) 1. Series"
   - Series와 DataFrame의 차이점 - Series는 DataFrame의 단일 열로 간주
 <br>
 
-* List로부터 1차원의 Series 생성
+**List로부터 1차원의 Series 생성**
 
   - Series는 데이터와 관련 인덱스로 구성됨(숫자 인덱스는 자동으로 생성됨)
   - 참고 사이트 : https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series
@@ -24,57 +24,57 @@ series_1 = pd.Series(data = my_list)
 series_1
 ```
 
-    0    NVDA
-    1    MSFT
-    2      FB
-    3    AMZN
-    4      BA
-    dtype: object
+        0    NVDA
+        1    MSFT
+        2      FB
+        3    AMZN
+        4      BA
+        dtype: object
 
 
 # 2. Custom Index를 사용하여 Pandas Series 정의
 
-* 5개 주식명의 List 생성: Nvidia, Microsoft, FaceBook, Amazon, and Boeing
+**5개 주식명의 List 생성: Nvidia, Microsoft, FaceBook, Amazon, and Boeing**
 
 ```python
 my_list = ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 my_list
 ```
-    ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
+        ['NVDA', 'MSFT', 'FB', 'AMZN', 'BA']
 
 <br>
 
-* Series의 Index가 되는 List 생성
+**Series의 Index가 되는 List 생성**
 
 ```python
 my_labels = ['stock#1', 'stock#2', 'stock#3', 'stock#4', 'stock#5']
 my_labels
 ```
-    ['stock#1', 'stock#2', 'stock#3', 'stock#4', 'stock#5']
+        ['stock#1', 'stock#2', 'stock#3', 'stock#4', 'stock#5']
 
 <br>
 
-* my_labels을 Index로, my_list를 데이터로 하는 1차원 Series 생성
+**my_labels을 Index로, my_list를 데이터로 하는 1차원 Series 생성**
 
 ```python
 series_3 = pd.Series(data = my_list, index = my_labels)
 series_3
 ```
-    stock#1    NVDA
-    stock#2    MSFT
-    stock#3      FB
-    stock#4    AMZN
-    stock#5      BA
-    dtype: object
+        stock#1    NVDA
+        stock#2    MSFT
+        stock#3      FB
+        stock#4    AMZN
+        stock#5      BA
+        dtype: object
 
 <br>
 
-* 생성된 Pandas Series의 타입은 아래와 같음
+**생성된 Pandas Series의 타입은 아래와 같음**
 
 ```python
 type(series_3)
 ```
-    pandas.core.series.Series
+        pandas.core.series.Series
 
 
 
@@ -82,6 +82,7 @@ type(series_3)
 
 * 딕셔너리(Dictionary)의 Key 값을 Index로, Value 값을 Data로 하는 Pandas Series 생성
 
+**딕셔너리(Dictionary) 생성**
 ```python
 
 my_dict = {'Bank Client Name': 'Steve',
@@ -90,11 +91,11 @@ my_dict = {'Bank Client Name': 'Steve',
            'Years with bank': 9}
 my_dict
 ```
-
-    {'Bank Client Name': 'Steve',
-     'Bank client ID': 111,
-     'Net worth [$]': 3500,
-     'Years with bank': 9}
+    
+        {'Bank Client Name': 'Steve',
+         'Bank client ID': 111,
+         'Net worth [$]': 3500,
+         'Years with bank': 9}
 
 <br>
 
@@ -102,78 +103,66 @@ my_dict
 type(my_dict)
 ```
 
-    dict
-
+        dict
 
 <br>
 
-* 딕셔너리(Dictionary)로부터 Pandas Series 생성
+**딕셔너리(Dictionary)로부터 Pandas Series 생성**
 
 ```python
 series_4 = pd.Series(my_dict)
 series_4
 ```
 
-    Bank Client Name    Steve
-    Bank client ID        111
-    Net worth [$]        3500
-    Years with bank         9
-    dtype: object
+        Bank Client Name    Steve
+        Bank client ID        111
+        Net worth [$]        3500
+        Years with bank         9
+        dtype: object
 
 
 # 4. Pandas 속성(Attributes)
 
-* Attributes(속성)/Properties(특성): 괄호 "()"를 사용하지 않으며 Pandas Series의 속성을 가져오는 데 사용됩니다.
+* Attributes(속성)/Properties(특성): 괄호 "()"를 사용하지 않으며 Pandas Series의 속성을 가져오는 데 사용<br>
+    ex) `my_series.values, my_series.shape`
+* Methods(메서드) : 괄호 "()"를 사용하며 인수를 포함할 수 있고 실제로 Pandas Series를 변경/수정<br>
+    ex) `my_series.tail(), my_series.head(), my_series.drop_duplicates()`
+* Indexers(인덱서) : 대괄호 "[]"를 사용하며 Pandas Series 또는 DataFrame의 특정 요소에 접근하는 데 사용<br>
+    ex) `my_series.loc[], my_series.iloc[]`
+<br>
+
+**Pandas Series 생성**
 
 ```python
-# Attributes/Properties: do not use parantheses "()" and are used to get Pandas Series Properties. Ex: my_series.values, my_series.shape
-# Methods: use parantheses "()" and might include arguments and they actually alter/change the Pandas Series. Ex: my_series.tail(), my_series.head(), my_series.drop_duplicates()
-# Indexers: use square brackets "[]" and are used to access specific elements in a Pandas Series or DataFrame. Ex: my_series.loc[], my_series.iloc[]
-
-# Let's redefine a Pandas Series containing our favourite 5 stocks 
-# Nvidia, Microsoft, FaceBook, Amazon, and Boeing
 my_list = ['Nvidia', 'Microsoft', 'FaceBook', 'Amazon', 'Boeing']
 my_series = pd.Series(data = my_list)
 my_series
 ```
 
+      0       Nvidia
+      1    Microsoft
+      2     FaceBook
+      3       Amazon
+      4       Boeing
+      dtype: object
 
+<br>
 
-
-    0       Nvidia
-    1    Microsoft
-    2     FaceBook
-    3       Amazon
-    4       Boeing
-    dtype: object
-
-
-
+* .values" attribute : dtype에 따라 Series를 ndarray로 반환하는 데 사용
+* 참고 사이트: https://pandas.pydata.org/docs/reference/api/pandas.Series.values.html#pandas.Series.values
 
 ```python
-# ".Values" attribute is used to return Series as ndarray depending on its dtype
-# Check this for more information: https://pandas.pydata.org/docs/reference/api/pandas.Series.values.html#pandas.Series.values
 my_series.values
 ```
 
-
-
-
-    array(['Nvidia', 'Microsoft', 'FaceBook', 'Amazon', 'Boeing'],
-          dtype=object)
-
-
-
+        array(['Nvidia', 'Microsoft', 'FaceBook', 'Amazon', 'Boeing'],
+              dtype=object)
 
 ```python
-# index is used to return the index (axis labels) of the Series
 my_series.index
 ```
 
-
-
-
-    RangeIndex(start=0, stop=5, step=1)
+      RangeIndex(start=0, stop=5, step=1)
 
 
 
