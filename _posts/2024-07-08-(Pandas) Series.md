@@ -67,6 +67,8 @@ series_3
     stock#5      BA
     dtype: object
 
+<br>
+
 * 생성된 Pandas Series의 타입은 아래와 같음
 
 ```python
@@ -94,6 +96,7 @@ my_dict
      'Net worth [$]': 3500,
      'Years with bank': 9}
 
+<br>
 
 ```python
 type(my_dict)
@@ -102,16 +105,14 @@ type(my_dict)
     dict
 
 
+<br>
 
+* 딕셔너리(Dictionary)로부터 Pandas Series 생성
 
 ```python
-# Let's define a Pandas Series Using the dictionary
 series_4 = pd.Series(my_dict)
 series_4
 ```
-
-
-
 
     Bank Client Name    Steve
     Bank client ID        111
@@ -120,35 +121,9 @@ series_4
     dtype: object
 
 
+# 4. Pandas 속성(Attributes)
 
-**MINI CHALLENGE #3:**
-- **Create a Pandas Series from a dictionary with 3 of your favourite stocks and their corresponding prices** 
-
-
-```python
-stock_dict = {"ABC" : 1000,
-              "DDD" : 2000,
-              "ERT" : 1300}
-stock_series = pd.Series(stock_dict)
-```
-
-
-```python
-stock_series
-```
-
-
-
-
-    ABC    1000
-    DDD    2000
-    ERT    1300
-    dtype: int64
-
-
-
-# 4. PANDAS ATTRIBUTES
-
+* Attributes(속성)/Properties(특성): 괄호 "()"를 사용하지 않으며 Pandas Series의 속성을 가져오는 데 사용됩니다.
 
 ```python
 # Attributes/Properties: do not use parantheses "()" and are used to get Pandas Series Properties. Ex: my_series.values, my_series.shape
