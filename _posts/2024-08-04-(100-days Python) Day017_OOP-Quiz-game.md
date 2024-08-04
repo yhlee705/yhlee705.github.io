@@ -1,3 +1,10 @@
+---
+categories: 
+ - Python
+layout: single
+title: "(100days Python) Day17_OOP(Quiz game)"
+---
+
 |Tree|Description|
 |---|---|
 |📦Day17quiz-game-final | |
