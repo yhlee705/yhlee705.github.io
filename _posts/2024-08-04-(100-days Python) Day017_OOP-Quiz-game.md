@@ -5,6 +5,13 @@ layout: single
 title: "(100days Python) Day17_OOP(Quiz game)"
 ---
 
+## 프로그램 실행 구조
+
+* question_data.py로부터 data를 읽어 question_model.py의 구조체 형태로 Q/A의 List를 question_bank에 저장
+* question_bank를 quiz_brain.py의 QuizBrain에 전달하여 quiz 인스턴스 생성
+* quiz.still_has_questions()가 True인 경우 quiz.next_question()을 실행하여 문제 제출
+* QuizBrain 클래스 내에 정답을 맞히면 정답수를 계산하는 함수(check_answer(self, user_answer, correct_answer)) 동작
+
 |Tree|Description|
 |---|---|
 |📦Root | |
@@ -13,8 +20,7 @@ title: "(100days Python) Day17_OOP(Quiz game)"
 | ┣ 📜question_model.py | Question/Answer 구조를 포함하는 Class(구조체)|
 | ┗ 📜quiz_brain.py     | 문제를 내고 정답 여부를 확인하는 Class|
 
-main.py
------
+### main.py
 
 ```python
 from question_model import Question
@@ -37,8 +43,7 @@ print("You've completed the quiz")
 print(f"Your final score was: {quiz.score}/{quiz.question_number}")
 ```
 
-data.py
------
+### data.py
 
 ```python
 question_data = [
@@ -55,8 +60,7 @@ question_data = [
 ]
 ```
 
-question_model.py
------
+### question_model.py
 
 ```python
 class Question:
@@ -66,8 +70,7 @@ class Question:
         self.answer = q_answer
 ```
 
-quiz_brain.py
------
+### quiz_brain.py
 
 ```python
 class QuizBrain:
