@@ -84,29 +84,24 @@ import html
 
 ```python
 text = "Science &amp; Nature"
-text
+print(text)
 ```
 
 
 
 
-    'Science &amp; Nature'
+        'Science &amp; Nature'
 
 
 
 
 ```python
-html.unescape(text)
+print(html.unescape(text))
 ```
 
 
 
 
-    'Science & Nature'
+        'Science & Nature'
 
 
-
-
-```python
-
-```
