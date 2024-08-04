@@ -7,7 +7,7 @@ title: "(100days Python) Day17_OOP(Quiz game)"
 
 |Tree|Description|
 |---|---|
-|📦Day17quiz-game-final | |
+|📦Root | |
 | ┣ 📜main.py           | |
 | ┣ 📜data.py           | Question/Answer를 포함하는 Dataset|
 | ┣ 📜question_model.py | Question/Answer 구조를 포함하는 Class(구조체)|
