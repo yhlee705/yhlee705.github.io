@@ -5,6 +5,8 @@ layout: single
 title: "(100days Python) Day37_OOP_GUI(Quiz game)"
 ---
 
+## 프로그램 실행 구조
+
 |Tree|Description|
 |📦Root                 ||
 | ┣ 📜main.py           ||
@@ -16,8 +18,7 @@ title: "(100days Python) Day37_OOP_GUI(Quiz game)"
 | ┣ 📜quiz_brain.py     |문제를 내고 정답 여부를 확인하는 Class|
 | ┗ 📜ui.py             |Tkinter 기반의 GUI|
 
-main.py
------
+### main.py
 
 ```python
 from question_model import Question
@@ -36,8 +37,7 @@ quiz = QuizBrain(question_bank)
 quiz_ui = QuizInterface(quiz)
 ```
 
-data.py
------
+### data.py
 
 ```python
 question_data = [
@@ -54,8 +54,7 @@ question_data = [
 ]
 ```
 
-question_model.py
------
+### question_model.py
 
 ```python
 class Question:
@@ -65,8 +64,7 @@ class Question:
         self.answer = q_answer
 ```
 
-quiz_brain.py
------
+### quiz_brain.py
 
 ```python
 import html
@@ -97,8 +95,7 @@ class QuizBrain:
             return False
 ```
 
-ui.py
------
+### ui.py
 
 ```python
 from tkinter import *
