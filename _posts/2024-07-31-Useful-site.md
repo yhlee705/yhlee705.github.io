@@ -78,3 +78,23 @@ https://www.webfx.com/web-development/glossary/http-status-codes/
 https://jsonviewer.stack.hu/
 
 * JSON 파일을 Tree 구조로 확인할 수 있는 online viewer
+
+## 기타
+
+### Latitude and Longitude Finder
+
+https://www.latlong.net/
+
+* 도시명 또는 지도 선택을 통해 위도, 경도 좌표를 찾아주는 사이트
+
+### OpenWeather
+
+[https://openweathermap.org/guide](https://openweathermap.org/guide)
+
+* 날씨, 일기예보 API를 제공하는 사이트
+
+### Twilio
+
+https://www.twilio.com/en-us
+
+* 웹 서비스 API를 사용하여 전화 통화, 문자 메시지 전송 및 수신, 기타 통신 기능 수행을 위한 프로그래밍 가능한 통신 도구 제공
