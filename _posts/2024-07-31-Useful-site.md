@@ -68,4 +68,13 @@ https://www.w3schools.com/html/html_entities.asp
 https://www.webfx.com/web-development/glossary/http-status-codes/
 
 * HTTP 상태 코드를 확인할 수 있는 사이트
+
 <br>
+
+## JSON
+
+### Online JSON Viewer
+
+https://jsonviewer.stack.hu/
+
+* JSON 파일을 Tree 구조로 확인할 수 있는 online viewer
