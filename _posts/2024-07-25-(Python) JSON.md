@@ -2,7 +2,7 @@
 categories: 
  - Python
 layout: single
-title: "(Python) JSON"
+title: "(Python) JSON(작성중)"
 ---
 
 ## <b>JSON</b>
