@@ -62,6 +62,14 @@ https://opentdb.com/
 
 <br>
 
+### Sheety
+
+[https://sheety.co/](https://sheety.co/)
+
+* 구글 spreadsheet를 API로 전환
+  
+<br>
+
 ## HTML
 
 ### HTML Entitiees
@@ -76,6 +84,23 @@ https://www.w3schools.com/html/html_entities.asp
 https://www.webfx.com/web-development/glossary/http-status-codes/
 
 * HTTP 상태 코드를 확인할 수 있는 사이트
+
+<br>
+
+### CODEPEN
+
+[https://codepen.io/](https://codepen.io/)
+
+* HTML, CSS, JS로 코드 작성하면 실시간으로 생성되는 웹페이지 표시
+
+<br>
+
+### MDN, W3 School
+
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)<br>
+[https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
+
+* HTML 문법 Manual
 
 <br>
 
@@ -95,11 +120,15 @@ https://www.latlong.net/
 
 * 도시명 또는 지도 선택을 통해 위도, 경도 좌표를 찾아주는 사이트
 
+<br>
+
 ### OpenWeather
 
 [https://openweathermap.org/guide](https://openweathermap.org/guide)
 
 * 날씨, 일기예보 API를 제공하는 사이트
+
+<br>
 
 ### Twilio
 
@@ -107,8 +136,18 @@ https://www.twilio.com/en-us
 
 * 웹 서비스 API를 사용하여 전화 통화, 문자 메시지 전송 및 수신, 기타 통신 기능 수행을 위한 프로그래밍 가능한 통신 도구 제공
 
+<br>
+
 ### PythonAnywhere
 
 [https://www.pythonanywhere.com/](https://www.pythonanywhere.com/)
 
 * Python 코드를 실행할 수 있는 Cloud 서비스
+
+<br>
+
+### DevDocs API
+
+[https://devdocs.io/](https://devdocs.io/)
+
+* 다양한 언어, 패키지 등의 문서를 모아놓은 사이트
