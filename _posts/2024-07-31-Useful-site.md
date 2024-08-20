@@ -104,6 +104,16 @@ https://www.webfx.com/web-development/glossary/http-status-codes/
 
 <br>
 
+## CSS
+
+### Favicon.cc
+
+[https://www.favicon.cc](https://www.favicon.cc)
+
+* Favicon 생성 사이트
+
+<br>
+
 ## JSON
 
 ### Online JSON Viewer
