@@ -112,6 +112,19 @@ https://www.webfx.com/web-development/glossary/http-status-codes/
 
 * Favicon 생성 사이트
 
+### cssfontstack
+
+[https://www.cssfontstack.com/](https://www.cssfontstack.com/)
+
+- 운영 체제별로 해당 폰트롤 보유하고 있을 확률을 보여줌
+- 해당 폰트가 없는 경우 적용 가능한 대체폰트 제공
+
+### Google Fonts
+
+[https://fonts.google.com/](https://fonts.google.com/)
+
+- Font Embbeding 제공 사이트
+
 <br>
 
 ## JSON
