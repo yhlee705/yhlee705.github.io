@@ -102,6 +102,12 @@ https://www.webfx.com/web-development/glossary/http-status-codes/
 
 * HTML 문법 Manual
 
+### Lorem Ipsum Generator
+
+[https://loremipsum.io/](https://loremipsum.io/)
+
+- HTML에 들어갈 컨텐츠가 없는 경우 화면 구성 확인을 위해 의미 없는 text를 생성
+
 <br>
 
 ## CSS
