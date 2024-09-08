@@ -214,3 +214,62 @@ print(tagline)
 4. 최종적으로 날씨 정보와 옷차림 추천 결과를 사용자에게 제공함.
 
 LangChain의 Agents는 이러한 복잡한 작업을 언어 모델과 도구들의 조합을 통해 자동화할 수 있도록 돕는 강력한 기능입니다.
+
+LangChain에서 Agents를 사용하는 예를 간단한 Python 코드로 보여드리겠습니다. 이 예제에서는 Agent가 주어진 질문에 따라 다양한 도구를 사용하여 작업을 수행하는 모습을 설명합니다.
+
+### 예제: 수학 계산과 정보 검색을 동시에 수행하는 Agent
+
+이 예제에서는 Agent가 기본적인 수학 계산과 인터넷에서 정보를 검색하는 두 가지 작업을 수행할 수 있도록 설정합니다.
+
+```python
+from langchain import OpenAI, LLMMathChain, SerpAPIWrapper
+from langchain.agents import initialize_agent, Tool, AgentType
+
+# OpenAI API 키를 설정
+llm = OpenAI(temperature=0.7)
+
+# 계산을 수행할 수 있는 도구 설정 (LLMMathChain)
+math_tool = LLMMathChain(llm=llm)
+
+# 인터넷에서 정보를 검색할 수 있는 도구 설정 (SerpAPIWrapper)
+search_tool = SerpAPIWrapper(api_key="your_serpapi_key")
+
+# 도구들을 모아서 Tool 리스트로 만듦
+tools = [
+    Tool(name="Calculator", func=math_tool.run, description="Perform mathematical calculations"),
+    Tool(name="Search", func=search_tool.run, description="Search for information on the internet"),
+]
+
+# Agent 초기화
+agent = initialize_agent(
+    tools=tools,
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    llm=llm,
+    verbose=True
+)
+
+# 예제 질문: 복잡한 계산과 정보 검색을 동시에 수행하는 질문
+question = "지구의 둘레를 계산한 후, 현재 뉴욕의 날씨가 어떤지 알려줘"
+
+# Agent 실행
+response = agent.run(question)
+print(response)
+```
+
+### 코드 설명
+
+1. **LLMMathChain**: 수학 계산을 수행할 수 있는 도구로, 주어진 수식을 계산하여 결과를 반환합니다.
+2. **SerpAPIWrapper**: SerpAPI를 사용하여 인터넷에서 정보를 검색하는 도구입니다. 이 도구를 통해 특정 주제에 대해 검색할 수 있습니다.
+3. **Tool 리스트**: 위에서 정의한 `Calculator`와 `Search` 도구를 `Tool` 객체로 만들고, 이를 리스트로 묶습니다.
+4. **Agent 초기화**: `initialize_agent` 함수를 사용하여 Agent를 초기화합니다. 이때, 사용할 도구 리스트와 LLM(언어 모델), 에이전트 유형을 지정합니다.
+5. **질문 실행**: Agent에게 질문을 주고, 그 결과를 받아옵니다. 예제에서는 지구의 둘레를 계산한 후 뉴욕의 날씨를 검색하여 알려달라는 질문을 던집니다.
+
+### 실행 결과
+
+Agent는 다음과 같은 작업을 수행합니다:
+
+1. 먼저, 지구의 둘레를 계산합니다. (예: `40075 km`)
+2. 그런 다음, SerpAPI를 사용하여 뉴욕의 현재 날씨를 검색합니다.
+3. 최종적으로 계산 결과와 검색 결과를 결합하여 사용자에게 전달합니다.
+
+이 예제는 Agent가 복잡한 질문에 대해 여러 도구를 조합하여 작업을 수행할 수 있음을 보여줍니다. LangChain의 Agents를 활용하면 다양한 도구와 LLM을 결합하여 복잡한 작업을 자동화할 수 있습니다.
