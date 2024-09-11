@@ -331,3 +331,55 @@ print('Model Metrics:', metrics)
 이 예제에서는 `LangSmithClient`를 사용하여 모델의 테스트를 실행하고, 테스트 결과를 출력합니다. 또한, 모델의 성능 지표를 가져와서 모니터링하는 기능을 포함하고 있습니다.
 
 이 코드를 실행하려면 `langsmith` 라이브러리를 설치하고, 실제 API 키와 모델 ID를 사용해야 합니다.
+
+
+## LangChain Expression Language (LCEL)
+
+LangChain Expression Language (LCEL)은 LangChain 프레임워크에서 사용하는 언어로, 주로 언어 모델과의 상호작용을 정의하거나 제어하는 데 사용됩니다. LCEL은 언어 모델이 입력을 처리하거나 응답을 생성하는 방식을 보다 정밀하게 제어할 수 있도록 도와줍니다. 
+
+### 주요 기능
+
+1. **표현식 정의**
+   - LCEL은 사용자가 모델과 상호작용하는 표현식을 정의할 수 있게 해줍니다. 이는 입력을 변형하거나 특정 로직을 적용하여 모델의 응답을 조정하는 데 사용됩니다.
+
+2. **조건문 및 반복문**
+   - LCEL은 조건문(if-else)과 반복문(for, while)을 지원하여 복잡한 논리 구조를 정의할 수 있습니다. 이를 통해 더 동적인 응답 생성이나 데이터 처리 로직을 구현할 수 있습니다.
+
+3. **변수와 함수**
+   - LCEL에서는 변수와 함수를 정의하고 사용할 수 있습니다. 이를 통해 코드의 재사용성과 유지보수성을 높일 수 있으며, 복잡한 계산이나 데이터 변환을 간편하게 처리할 수 있습니다.
+
+4. **템플릿 및 포맷팅**
+   - LCEL은 템플릿과 포맷팅 기능을 지원하여, 동적으로 생성된 문자열을 포맷팅하거나 템플릿을 사용할 수 있습니다. 이는 다양한 입력을 효과적으로 처리하고, 사용자 맞춤형 응답을 생성하는 데 유용합니다.
+
+5. **통합 및 확장성**
+   - LCEL은 LangChain의 다른 구성 요소와 통합되어, 모델의 입력과 출력을 더 세밀하게 제어할 수 있습니다. 또한, 외부 라이브러리나 API와 연동하여 기능을 확장할 수 있습니다.
+
+### 예제 코드
+
+아래는 LCEL을 사용하여 간단한 표현식을 정의하고 사용하는 예제 코드입니다.
+
+```python
+from langchain import LCEL
+
+# LCEL 표현식 정의
+expression = """
+if (user_input contains 'weather') {
+    response = 'Sure, I can help with the weather. What city are you interested in?';
+} else if (user_input contains 'news') {
+    response = 'I can provide news updates. What topic are you interested in?';
+} else {
+    response = 'Sorry, I didn\'t understand that. Can you please specify if you need weather or news?';
+}
+"""
+
+# LCEL 표현식을 실행하여 모델의 응답을 생성
+lcel = LCEL(expression)
+user_input = 'Tell me the weather in New York'
+response = lcel.evaluate(user_input)
+
+print('Model Response:', response)
+```
+
+이 예제에서 LCEL 표현식을 사용하여 사용자 입력에 따라 적절한 응답을 생성합니다. 입력이 'weather'를 포함하면 날씨 관련 응답을, 'news'를 포함하면 뉴스 관련 응답을 생성하고, 그렇지 않으면 이해하지 못했다는 응답을 생성합니다.
+
+LCEL은 이러한 방식으로 언어 모델의 응답을 보다 정교하게 제어하고, 다양한 상호작용 시나리오를 지원할 수 있게 해줍니다.
